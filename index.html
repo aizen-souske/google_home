@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Google Home</title>
+        <style>
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+            }
+            .header{
+                position:relative; 
+                float:right;
+                text-align: center; 
+                text-decoration: none;
+                margin: 6px;       
+            }
+
+            .header li{
+                float:left;
+                font-size: small;
+                font-family: arial, sans-serif;
+                
+            }
+
+            .header li a{
+                padding: 6px 8px;
+                text-decoration: none;
+                color: black;
+                
+            }
+
+            .header button{
+                background-color: #4285f4;
+                font-weight: bold;
+                border: 1px solid #4285f4;
+                height: 28px;
+                padding: 0 12px;
+                border-radius: 2px;
+                
+                color: whitesmoke;
+            }
+            
+            .centered{
+                display: block;
+                margin-left: auto;
+                margin-right:auto;
+            }
+
+            .centered img{
+                margin: 30px;
+            }
+
+            .flex-but{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            section button{
+                background-color: #f2f2f2;
+                margin: 11px 4px;
+                padding: 0 16px;
+                font-family: arial, sans-serif;
+                border: 1px solid;
+                border-radius: 4px;
+                height: 36px;
+                font-size: 14px;
+                min-width: 54px;
+                color: #5F6368;
+                border-color: #f2f2f2;
+                
+                cursor: pointer;
+                
+            }
+            .flex-but:hover{
+                opacity: 1;
+            }
+
+            input{
+                border-radius: 20px;
+                width: 500px;
+                height: 40px !important;
+                margin:0px;
+                padding: 0px;
+                outline: none;
+                background: none;
+                color: rgba(0,0,0,.87);
+            }
+
+           footer p{
+                background-color: #f2f2f2;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                padding: 10px;
+                color: grey;
+            }
+
+            footer a{
+                text-decoration: none;
+                font-family: arial, sans-serif;
+                font-size: small;
+                color: rgba(0,0,0,.54);
+                margin-left: 30px;
+                padding-left: 27px;
+            }
+
+            .fbar{
+                background-color: #f2f2f2;
+                line-height: 40px;
+                min-width: 980px;
+                border-top: 1px solid #e4e4e4;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+            }
+
+            .fbl{
+                border-bottom: 1px solid #e4e4e4;
+                background-color: #f2f2f2;
+                text-align: left;
+                margin-left: 30px;
+                padding-left: 27px;
+                font-size: 15px;
+                color: rgba(0,0,0,.54);
+                font-family: arial, sans-serif;
+            }
+            .botleft{
+                margin-left: 30px;
+                white-space: nowrap;
+                float:left;
+                font-family: arial, sans-serif;
+                text-align: left;
+                font-size: 15px;
+                color: rgba(0,0,0,.54);
+                margin-left: 30px;
+                padding-left: 27px;
+            }
+
+            .botleft{
+                margin-right: 30px;
+                white-space: nowrap;
+                float:right;
+                color: #222;
+                font-family: arial, sans-serif;
+                text-align: left;
+                font-size: 15px;
+                color: rgba(0,0,0,.54);
+                margin-left: 30px;
+                padding-left: 27px;
+            }
+
+            section p{
+                font-size: smaller;
+                text-align: center;
+                align-items: center;
+                font-family: arial, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <ul>
+                <li style=padding:6px; style=margin:6xp;><a href="#Gmail">Gmail</a></li>
+                <li style=padding:6px; style=margin:6px;><a href="Images">Images</a></li>
+                <li><a href="Apps Menu"><img src="/home/aizen/odin_on_rails/HTML-CSS/Appsmenu.png" width=30px height=30px title="Apps menu"></a></li>
+                <li><a href="Sign in"><button type="button">Sign in</button></a></li>
+            </ul>
+        </header>
+
+        <section style=padding:150px;>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="Google logo"  class="centered" style=padding:50px>
+            <input type="text" name="Search bar" class="centered">
+            <div class="flex-but">
+                <div><button type="button" class="flex-but">Google Search</button></div>
+                <div><button type="button">Feeling Lucky</button></div>
+            </div>
+            
+           <!-- <input type="text" name="Search bar" class="centered">
+            <button type="button">Google Search</button>
+            <button type="button">Feeling Lucky</button>-->
+            <p class="centered">Google offered in: <a href="Afrikaans">Afrikaans</a> <a href="Sesotho">Sesotho</a> <a href="IsiZulu">IsiZulu</a> <a href="IsiXhosa">IsiXhosa</a> <a href="Setswana">Setswana</a> <a href="Northern Sotho">Northern Sotho</a></p>
+            
+        </section>
+       
+
+        <footer>
+            <div class="fbar">
+                <div class="fbl">South Africa</div>
+                <span class="botleft">
+                    <a href="Advertising">Advertising</a>
+                    <a href="Business">Business</a>
+                    <a href="About">About</a>
+                    <a href="HSW">How Search Works</a>
+                </span>
+                <span class="botright">
+                    <a href="Privacy">Privacy</a>
+                    <a href="Terms">Terms</a>
+                    <a href="Settings">Settings</a>
+                </span>
+            <!--<span>
+                <ul class="botleft">
+                    <li><a href="Advertising">Advertising</a></li>
+                    <li><a href="Business">Business</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="HSW">How Search Works</a></li>
+                </ul>
+            </span>
+                    
+            <span class="botright">
+                <ul>
+                        <li><a href="Privacy">Privacy</a></li>
+                        <li><a href="Terms">Terms</a></li>
+                        <li><a href="Settings">Settings</a></li>
+                </ul>
+            </span>-->
+            </div>
+        </footer>
+    </body>
+</html>
